@@ -6,7 +6,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import time
 from whatsapp_business_api_sdk import WhatsAppBusinessApi
-import pathlib # <- Agrega esta línea
+import pathlib
 
 # Cargar las variables de entorno desde el archivo .env
 load_dotenv()
@@ -21,8 +21,8 @@ client = OpenAI(
 def get_menu_from_json():
     """Carga el menú desde un archivo JSON."""
     try:
-        current_dir = pathlib.Path(__file__).parent # <- Agrega esta línea
-        with open(current_dir / 'menu.json', 'r', encoding='utf-8') as file: # <- Reemplaza la línea existente
+        current_dir = pathlib.Path(__file__).parent
+        with open(current_dir / 'menu.json', 'r', encoding='utf-8') as file:
             menu = json.load(file)
         return menu
     except Exception as e:
