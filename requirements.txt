@@ -3,4 +3,4 @@ openai
 python-dotenv
 gunicorn
 requests
-whatsapp-business-api-sdk
+whatsapp-cloud-api
