@@ -5,7 +5,6 @@ from flask import Flask, render_template, request, jsonify
 from openai import OpenAI
 from dotenv import load_dotenv
 import time
-from whatsapp_business_api_sdk import WhatsAppBusinessApi
 
 # Cargar las variables de entorno desde el archivo .env
 load_dotenv()
